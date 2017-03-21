@@ -1,0 +1,333 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 59287759,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the game parser",
+            "match": {
+              "location": "ParserSteps.the_game_parser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Parse a valid single word command",
+        "description": "",
+        "id": "parsing-user-input;parse-a-valid-single-word-command",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1229024,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the command \"inventory\" is parsed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "inventory",
+                  "offset": 13
+                }
+              ],
+              "location": "ParserSteps.the_command_is_parsed(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67145,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the verb is \"inventory\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "inventory",
+                  "offset": 13
+                }
+              ],
+              "location": "ParserSteps.the_verb_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32923,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "there is no direct object",
+            "match": {
+              "location": "ParserSteps.there_is_no_direct_object()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54070,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the parser response is \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Success",
+                  "offset": 24
+                }
+              ],
+              "location": "ParserSteps.the_parser_response_is(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19305,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the game parser",
+            "match": {
+              "location": "ParserSteps.the_game_parser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Parse a command with a direct object",
+        "description": "",
+        "id": "parsing-user-input;parse-a-command-with-a-direct-object",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 52180,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the command \"get spade\" is parsed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get spade",
+                  "offset": 13
+                }
+              ],
+              "location": "ParserSteps.the_command_is_parsed(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49194,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the verb is \"get\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 13
+                }
+              ],
+              "location": "ParserSteps.the_verb_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37999,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the direct object is \"spade\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "spade",
+                  "offset": 22
+                }
+              ],
+              "location": "ParserSteps.theDirectObjectIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31252,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the parser response is \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Success",
+                  "offset": 24
+                }
+              ],
+              "location": "ParserSteps.the_parser_response_is(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18531,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the game parser",
+            "match": {
+              "location": "ParserSteps.the_game_parser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Parse a command with an indirect object",
+        "description": "",
+        "id": "parsing-user-input;parse-a-command-with-an-indirect-object",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 66818,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the command \"dig earth with spade\" is parsed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dig earth with spade",
+                  "offset": 13
+                }
+              ],
+              "location": "ParserSteps.the_command_is_parsed(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46490,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the verb is \"dig\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dig",
+                  "offset": 13
+                }
+              ],
+              "location": "ParserSteps.the_verb_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34392,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the direct object is \"earth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "earth",
+                  "offset": 22
+                }
+              ],
+              "location": "ParserSteps.theDirectObjectIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46328,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the indirect object is \"spade\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "spade",
+                  "offset": 24
+                }
+              ],
+              "location": "ParserSteps.theIndirectObjectIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30923,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the parser response is \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Success",
+                  "offset": 24
+                }
+              ],
+              "location": "ParserSteps.the_parser_response_is(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Parsing User Input",
+    "description": "",
+    "id": "parsing-user-input",
+    "keyword": "Ability",
+    "uri": "nostalgic/textadv/voxam/parser.feature"
+  }
+]
